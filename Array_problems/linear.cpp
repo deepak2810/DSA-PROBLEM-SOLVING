@@ -1,26 +1,38 @@
-// a simple c++ program for linear searching in array
 #include<iostream>
 using namespace std;
-int main(){
 
-  int n;
+int LinearSearch(int arr[], int n, int key)
+{
+  for(int i = 0; i<n; i++){
+    if(arr[i]==key){
+      return i;
+    }
+  }
+
+  return -1;
+}
+
+
+
+int main(){
+  int n, key;
+  std::cout << "Size of the array: " << '\n';
   std::cin >> n;
 
   int arr[n];
 
-  for(int i = 0; i<n; i++){
+  std::cout << "Please input element of the array : " << '\n';
+
+  for(int i=0; i<n; i++){
     std::cin >> arr[i];
   }
 
-  int key;
-  std::cout << "Enter the element you want to search : " << '\n';
+  std::cout << "Enter the element you want to search" << '\n';
   std::cin >> key;
 
-  for(int i = 0; i<n; i++){
-    if(arr[i])==key){
-    std::cout << "element is present at " << i << " index. " << '\n';
-  }
-  else{
-    std::cout << "element is not present in the arrat." << '\n';
-  }
+  std::cout << key <<" is present at " ;
+  std::cout << LinearSearch(arr,n,key) <<" Index. "<< '\n';
+  std::cout << "Programmed by deepak@codes." << '\n';
+
+
 }

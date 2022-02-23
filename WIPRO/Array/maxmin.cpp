@@ -29,4 +29,7 @@ for(int i = 0; i<n; i++){
 
   cout<<"Maximum num is : "<<maxNo<<"\n";
   std::cout << "Minimum number is "<<minNo << '\n';
+
+
+  std::cout << maxNo+minNo << '\n';
 }

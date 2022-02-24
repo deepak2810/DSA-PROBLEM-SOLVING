@@ -1,6 +1,7 @@
  // a simple program to declare a string.
 
 #include<iostream>
+
 // Header file to use string data type.
 #include<string>
 using namespace std;

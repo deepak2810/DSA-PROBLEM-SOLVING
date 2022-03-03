@@ -11,7 +11,7 @@ int BinarySearch(int arr[], int target, int n){
   // 1.  Find the mid element
 
 
-while ( start<=end) {
+while (start<=end) {
   /* code */
   int mid = start + (end - start)/2;
 

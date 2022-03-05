@@ -13,6 +13,14 @@ int main(){
   // print the content of array instead of the add.
   std::cout << b << '\n';
 
+  // Declaring a char pointer that will hold the add. of array b
+
+  char *c = &b[0];
+
+
+  // print the content of the array instead of add.
+  std::cout << c << '\n';
+
 
 
 }

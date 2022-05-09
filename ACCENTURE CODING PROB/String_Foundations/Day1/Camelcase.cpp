@@ -34,5 +34,7 @@ int main()
 
     fout.close();
 
+    std::cout << camelcase(s) << '\n';
+
     return 0;
 }

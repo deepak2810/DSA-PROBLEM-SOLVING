@@ -7,7 +7,7 @@ int Recursion(int n){
     int smallOutput = Recursion(n-1);
 
     return n*smallOutput;
-  
+
 }
 int main(){
   int n;

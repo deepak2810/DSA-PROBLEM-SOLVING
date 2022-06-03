@@ -13,7 +13,7 @@ int main(){
   int check;
   std::cin >> check;
 
-  int flag, start,sum = 0;
+  int flag,start,sum = 0;
 
 
   for(int i = 0; i<n; i++ ){
@@ -24,12 +24,14 @@ int main(){
     start++;
   }
 
+
   if(sum==check){
-    std::cout << start+1<<" "<<i+1 << '\n';
+    std::cout << start<<'\n';
     flag = 1;
     break;
   }
   }
+
 
 if (flag==0) {
     /* code */
